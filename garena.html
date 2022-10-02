@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="Game.css">	
+<title>html</title>
+</head>
+
+<body>
+	<div id="header">
+		<nav>
+			<a href="logo">
+				<img src="img/logo.png" width="147" height="34">
+			</a>
+			<ul id="main-menu">
+		    <li><a href="">Home</a></li>
+							<div class="dropdown">
+  <button class="dropbtn">Game</button>
+  <div class="dropdown-content">
+    <a href="#">lmht</a>
+    <a href="#">liên quân</a>
+    <a href="#">fifa online 4</a>
+	<a href="#">blade & soul</a>
+	<a href="#">free fire</a>
+  </div>
+</div>
+										<div class="dropdown">
+  <button class="dropbtn">Nền tảng</button>
+  <div class="dropdown-content">
+    <a href="#">garena pc</a>
+    <a href="#">garena mobile</a>
+  </div>
+</div>
+			<li><a href="">LIVE</a></li>
+			<li><a href="">Hỗ trợ</a></li>
+			<li><a href="">Tài khoản</a></li>
+			<li><a href="">Tuyển dụng</a></li>
+			</ul>
+
+</div>
+		</nav>
+</div>
+		<div id="main">
+		<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="img/cau-hinh-choi-muot-LOL-cau-hinh-choi-lien-minh-huyen-thoai-2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="img/img-share.jpg"" style="width:100%" >
+</div>
+
+<div class="mySlides fade">
+  <img src="img/1304_04.jpg" style="width:100%">
+
+</div>
+
+		<div class="mySlides fade">
+  <img src="img/4SY0Z2.jpg" style="width:100%">
+</div>
+			<div class="mySlides fade">
+  <img src="img/2-1498724426733.webp" style="width:95%">
+</div>
+			
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+		<body onload="myF()">
+	<script type="text/javascript">
+function hide_float_right() {
+    var content = document.getElementById('float_content_right');
+    var hide = document.getElementById('hide_float_right');
+    if (content.style.display == "none")
+    {content.style.display = "block"; hide.innerHTML = '<a href="javascript:hide_float_right()"> Tắt quảng cáo [X]</a>'; }
+        else { content.style.display = "none"; hide.innerHTML = '<a href="javascript:hide_float_right()"></a>';
+    }
+    }
+	function myF(){
+      onl.style.display = "block";
+      
+    }
+    function un(){
+        onl.style.display = "none";
+    }
+</script>
+	
+<style>
+.float-ck { position: fixed; bottom: 30px; z-index: 9000}
+* html .float-ck {position:absolute;bottom:auto;top:expression(eval (document.documentElement.scrollTop+document.docum entElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0))) ;}
+#float_content_right {border: 3px solid #01AEF0;}
+#hide_float_right {text-align:right; font-size: 11px;}
+#hide_float_right a {background: #01AEF0; padding: 2px 4px; color: #FFF;}
+</style>
+
+    <div class="float-ck" style="right: 0px">
+<div id="hide_float_right">
+<a href="javascript:hide_float_right()">Tắt quảng cáo[X]</a></div>
+<div id="float_content_right">
+<!-- Start quang cao-->
+<a href="shopacc.html"><img src="../Lê Duy Hưng Th25.01 tkwed/img/download (2).jpg"></a>
+<!-- End quang cao -->
+</div>
+</div>
+<!-- QUẢNG CÁO GIỮA -->
+    <div id="onl" style="position: fixed; bottom: 120px; top: 80px; left : 400px; z-index: 100; display: block;">
+        <div style="backgroud-color:black; width:1000px; height=200px;">
+            <a href="javascript:un()" style="color: grey"> Tắt quảng cáo [X]</a>
+            <a href="shopacc.html"><img src="../Lê Duy Hưng Th25.01 tkwed/img/lol.png" width="450" height="450">S</a>
+        </div>
+    </div>
+<!-- KẾT THÚC QUẢNG CÁO GIỮA -->								   
+        </div>
+        <h1 style="text-align: center">Về chúng tôi</h1>
+        <div id="table">
+            <table>
+                <tr class="image-introduct">
+                                 
+                    <td><img src="img/received_1054662301862754.webp" alt=""></td>
+                    <td><img src="img/received_460287519304054.webp" alt=""></td>
+                    <td><img src="img/received_404812881574514.webp" alt=""></td>                  
+                </tr>
+                <tr class="introduct">
+                  <td><b>Garena là nhà tổ chức các giải đấu và sự kiện Thể Thao Điện Tử lớn trong khu vực Đông Nam Á, nhằm mục tiêu phát triển cộng đồng game thủ</b></td>
+                  <td><b>Garena là nhà phát hành game hàng đầu Đông Nam Á. Với nền tảng chúng tôi cung cấp, người dùng có thể trải nghiệm những tựa game online lôi cuốn, hấp dẫn nhất trên cả PC và mobile</b></td>
+                  <td><b>Người chơi có thể kết nối với nhau qua nền tảng Garena, cập nhật thông tin mới nhất từ cộng đồng</b></td>
+                </tr>
+            </table>
+			
+</body>						 
+</div>
+						  
+ </div>
+	<div id="footer">
+	<p> design by: Lê Duy Hưng</p> 
+	<em> Lớp TH25.01</em>
+	<b> Thiết kế wed</b>
+	<h3> sdt:0987654321</h3>
+	</div>
+</body>
+</html>

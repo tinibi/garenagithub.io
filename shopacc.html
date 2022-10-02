@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="shopaccout.css">
+<title>shopacc</title>
+</head>
+	<div id="header">
+		<nav>
+			<a href="logo">
+				<img src="img/logo24h.png" width="350" height="50">
+			</a>
+			<ul id="main-menu">
+		    <li><a href="">Hướng dẫn</a></li>
+			<li><a href="">Uy tín shop</a></li>
+			<li><a href="">Nạp thẻ</a></li>
+			<li><a href="">Đang ký</a></li>
+			<li><a href="">Đăng nhập</a></li>
+			</ul>
+
+</div>
+		</nav>
+</div>
+<body>
+	<div class="container">
+  <div class="mySlides">
+    <img src="img/images (4).jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="img/images (5).jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="img/download (3).jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <img src="img/download (2).jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="img/download (5).jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <img src="img/images (3).jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/images (4).jpg" style="width:100%" onclick="currentSlide(1)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/images (5).jpg" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/download (3).jpg" style="width:100%" onclick="currentSlide(3)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/download (2).jpg" style="width:100%" onclick="currentSlide(4)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/download (5).jpg" style="width:100%" onclick="currentSlide(5)" >
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="img/images (3).jpg" style="width:100%" onclick="currentSlide(6)" >
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>S
+	<div id="mySidenav" class="sidenav">
+  <a href="#" id="Guide">Hướng dãn</a>
+  <a href="#" id="Topupcard">Nạp thẻ</a>
+  <a href="#" id="Prestigeshop">Uy tín shop</a>
+  <a href="#" id="Tryyourluck">Thử vận may</a>
+  <a href="#" id="Rotationluck">Vòng quay may mắn</a>
+  <a href="#" id="contact">Liên lạc</a>
+  <a href="#" id="support">Hỗ Trợ</a>
+	<style>
+		#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+		#mySidenav a:hover {
+  left: 0;
+}
+
+#Guide {
+  top: 20px;
+  background-color: red;
+}
+
+#Topupcard {
+  top: 80px;
+  background-color: darkred;
+}
+
+#Tryyourluck {
+  top: 140px;
+  background-color:orangered;
+}
+
+#contact {
+  top: 300px;
+  background-color: crimson;
+}
+#Prestigeshop {
+  top: 360px;
+  background-color: maroon;
+}
+#support {
+  top: 420px;
+  background-color: firebrick;
+}
+		#Rotationluck {
+			top:220px;
+			background-color: chocolate;
+		}
+	</style>
+	</div>
+</body>
+</html>
